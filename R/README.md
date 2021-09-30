@@ -118,7 +118,7 @@ sd(lista)
 
 ~~~r
 # setando obsevacoes, amostras, media e desvio padrao.
-observacoes <- 20000
+observacoes <- 200000
 amostra <- 20000
 media <- 37
 desvio_padrao <- 7
