@@ -6,6 +6,7 @@
 - [Boxplot](#boxplot)
 - [Gerando Imagens](#gerando-imagens)
 - [Variância e Desvio Padrão](#variância-e-desvio-padrão)
+- [Gerando amostras com valores aleatórios](#randomizando-valores-de-uma-amostra)
 
 ## Download
 
@@ -111,4 +112,23 @@ retorna desvio padrão de uma distribuição
 
 ~~~r
 sd(lista)
+~~~
+
+## Randomizando valores de uma amostra
+
+~~~r
+# setando obsevacoes, amostras, media e desvio padrao.
+observacoes <- 20000
+amostra <- 20000
+media <- 37
+desvio_padrao <- 7
+
+# settando seed de geração pseudorandomica
+set.seed(1234)
+
+# randomizando valores
+idade <- abs(round(rnorm(amostra, media, desvio_padrao), 0))
+
+# visualizando distribuição normal
+hist(idade)
 ~~~
