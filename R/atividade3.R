@@ -77,3 +77,21 @@ rm(profissao.temp, pop.profissao)
 barplot(table(profissao), col = rainbow(3))
 #print(summary(profissao))
 str(profissao)
+
+#12 
+df <- data.frame(
+  id = 1:n,
+  altura, 
+  peso,
+  imc,
+  sexo,
+  escolaridade,
+  profissao,
+  fumante.f,
+  fumante.n,
+  salario,
+  carros,
+  filhos
+)
+
+write.table(df, file = "projeto01.csv", sep = ",", col.names = TRUE, fileEncoding = "UTF-8")
